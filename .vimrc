@@ -7,7 +7,9 @@ Plug 'dense-analysis/ale'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug 'preservim/nerdtree'
 Plug 'morhetz/gruvbox'
-
+Plug 'sonph/onehalf', {'rtp': 'vim/'}
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 " }}}
@@ -16,6 +18,11 @@ let g:gruvbox_italic=1
 let g:gruvbox_termcolors=256
 colorscheme gruvbox
 set background=dark
+
+colorscheme onehalflight
+let g:airline_theme='base16'
+
+
 " Disable compatibility with vi which can cause unexpected issues.
 set nocompatible
 " if hidden is not set, TextEdit might fail.
